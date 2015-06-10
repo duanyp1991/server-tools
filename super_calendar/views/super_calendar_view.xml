@@ -110,7 +110,8 @@
             <field name="name">super_calendar</field>
             <field name="model">super.calendar</field>
             <field name="arch" type="xml">
-                <calendar string="Calendar" color="model_description" date_start="date_start" date_delay="duration">
+                <calendar string="Calendar" color="model_id" date_start="date_start" date_delay="duration">
+                <!--The color attribute should be: model_description but v8 calendars require many2one fields-->
                     <field name="name"/>
                 </calendar>
             </field>
